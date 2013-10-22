@@ -1580,13 +1580,6 @@
 			return;
 		}
 
-		if (typeof(date) === 'string') {
-			date = new Date(date);
-			if (!date.getTime()) {
-				$.timepicker.log("Error creating Date object from string.");
-			}
-		}
-
 		var tp_inst = this._get(inst, 'timepicker');
 		var tp_date;
 		if (date instanceof Date) {
